@@ -1,0 +1,1 @@
+typedef MqttTopic = String;
