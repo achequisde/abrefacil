@@ -39,7 +39,8 @@ class AdminUserPage extends StatelessWidget {
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
                 final clients = [
-                  for (dynamic json in snapshot.data![0]) Condo.fromJson(json)
+                  for (dynamic json in snapshot.data![0])
+                    Customer.fromJson(json)
                 ];
                 print(clients);
                 print(snapshot.data![1][0]['user']);

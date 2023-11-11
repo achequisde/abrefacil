@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'condo.dart';
+part of 'customer.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,12 +14,12 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-Condo _$CondoFromJson(Map<String, dynamic> json) {
-  return _Condo.fromJson(json);
+Customer _$CustomerFromJson(Map<String, dynamic> json) {
+  return _Customer.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Condo {
+mixin _$Customer {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   int get limit => throw _privateConstructorUsedError;
@@ -27,21 +27,22 @@ mixin _$Condo {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $CondoCopyWith<Condo> get copyWith => throw _privateConstructorUsedError;
+  $CustomerCopyWith<Customer> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CondoCopyWith<$Res> {
-  factory $CondoCopyWith(Condo value, $Res Function(Condo) then) =
-      _$CondoCopyWithImpl<$Res, Condo>;
+abstract class $CustomerCopyWith<$Res> {
+  factory $CustomerCopyWith(Customer value, $Res Function(Customer) then) =
+      _$CustomerCopyWithImpl<$Res, Customer>;
   @useResult
   $Res call({int id, String name, int limit, bool enabled});
 }
 
 /// @nodoc
-class _$CondoCopyWithImpl<$Res, $Val extends Condo>
-    implements $CondoCopyWith<$Res> {
-  _$CondoCopyWithImpl(this._value, this._then);
+class _$CustomerCopyWithImpl<$Res, $Val extends Customer>
+    implements $CustomerCopyWith<$Res> {
+  _$CustomerCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -78,21 +79,22 @@ class _$CondoCopyWithImpl<$Res, $Val extends Condo>
 }
 
 /// @nodoc
-abstract class _$$CondoImplCopyWith<$Res> implements $CondoCopyWith<$Res> {
-  factory _$$CondoImplCopyWith(
-          _$CondoImpl value, $Res Function(_$CondoImpl) then) =
-      __$$CondoImplCopyWithImpl<$Res>;
+abstract class _$$CustomerImplCopyWith<$Res>
+    implements $CustomerCopyWith<$Res> {
+  factory _$$CustomerImplCopyWith(
+          _$CustomerImpl value, $Res Function(_$CustomerImpl) then) =
+      __$$CustomerImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int id, String name, int limit, bool enabled});
 }
 
 /// @nodoc
-class __$$CondoImplCopyWithImpl<$Res>
-    extends _$CondoCopyWithImpl<$Res, _$CondoImpl>
-    implements _$$CondoImplCopyWith<$Res> {
-  __$$CondoImplCopyWithImpl(
-      _$CondoImpl _value, $Res Function(_$CondoImpl) _then)
+class __$$CustomerImplCopyWithImpl<$Res>
+    extends _$CustomerCopyWithImpl<$Res, _$CustomerImpl>
+    implements _$$CustomerImplCopyWith<$Res> {
+  __$$CustomerImplCopyWithImpl(
+      _$CustomerImpl _value, $Res Function(_$CustomerImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -103,7 +105,7 @@ class __$$CondoImplCopyWithImpl<$Res>
     Object? limit = null,
     Object? enabled = null,
   }) {
-    return _then(_$CondoImpl(
+    return _then(_$CustomerImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -126,15 +128,15 @@ class __$$CondoImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$CondoImpl implements _Condo {
-  const _$CondoImpl(
+class _$CustomerImpl implements _Customer {
+  const _$CustomerImpl(
       {required this.id,
       required this.name,
       required this.limit,
       required this.enabled});
 
-  factory _$CondoImpl.fromJson(Map<String, dynamic> json) =>
-      _$$CondoImplFromJson(json);
+  factory _$CustomerImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CustomerImplFromJson(json);
 
   @override
   final int id;
@@ -147,14 +149,14 @@ class _$CondoImpl implements _Condo {
 
   @override
   String toString() {
-    return 'Condo(id: $id, name: $name, limit: $limit, enabled: $enabled)';
+    return 'Customer(id: $id, name: $name, limit: $limit, enabled: $enabled)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CondoImpl &&
+            other is _$CustomerImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.limit, limit) || other.limit == limit) &&
@@ -168,25 +170,26 @@ class _$CondoImpl implements _Condo {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$CondoImplCopyWith<_$CondoImpl> get copyWith =>
-      __$$CondoImplCopyWithImpl<_$CondoImpl>(this, _$identity);
+  _$$CustomerImplCopyWith<_$CustomerImpl> get copyWith =>
+      __$$CustomerImplCopyWithImpl<_$CustomerImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CondoImplToJson(
+    return _$$CustomerImplToJson(
       this,
     );
   }
 }
 
-abstract class _Condo implements Condo {
-  const factory _Condo(
+abstract class _Customer implements Customer {
+  const factory _Customer(
       {required final int id,
       required final String name,
       required final int limit,
-      required final bool enabled}) = _$CondoImpl;
+      required final bool enabled}) = _$CustomerImpl;
 
-  factory _Condo.fromJson(Map<String, dynamic> json) = _$CondoImpl.fromJson;
+  factory _Customer.fromJson(Map<String, dynamic> json) =
+      _$CustomerImpl.fromJson;
 
   @override
   int get id;
@@ -198,6 +201,6 @@ abstract class _Condo implements Condo {
   bool get enabled;
   @override
   @JsonKey(ignore: true)
-  _$$CondoImplCopyWith<_$CondoImpl> get copyWith =>
+  _$$CustomerImplCopyWith<_$CustomerImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
