@@ -1,6 +1,7 @@
 import 'package:android_intent_plus/android_intent.dart';
+import 'package:flutter/material.dart';
 
-void Function() makeIntentCall(String phoneNumber, int dtmfTone) {
+VoidCallback createPhoneCallIntentCallback(String phoneNumber, int dtmfTone) {
   return () async {
     final intent = AndroidIntent(
       action: 'android.intent.action.CALL',
