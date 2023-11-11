@@ -1,4 +1,4 @@
-import 'package:abrefacil/pages/signin.dart';
+import 'package:abrefacil/pages/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const SigninPage(),
+      home: const LoginPage(),
     );
   }
 }

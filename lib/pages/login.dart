@@ -9,16 +9,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
-class SigninPage extends ConsumerStatefulWidget {
-  const SigninPage({
+class LoginPage extends ConsumerStatefulWidget {
+  const LoginPage({
     super.key,
   });
 
   @override
-  ConsumerState<SigninPage> createState() => _SigninPageState();
+  ConsumerState<LoginPage> createState() => _LoginPageState();
 }
 
-class _SigninPageState extends ConsumerState<SigninPage> {
+class _LoginPageState extends ConsumerState<LoginPage> {
   final _formKey = GlobalKey<FormState>();
 
   final _emailController = TextEditingController();
