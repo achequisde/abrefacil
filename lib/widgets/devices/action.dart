@@ -24,7 +24,7 @@ class DeviceAction extends StatelessWidget {
 
     final message = parseMqttMessage(snapshot.data![0]);
 
-    return message == 'on' ? Colors.green : Colors.grey;
+    return message == 'ON' ? Colors.green : Colors.grey;
   }
 
   void _onPressedHandler() async {

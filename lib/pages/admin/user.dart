@@ -1,4 +1,4 @@
-import 'package:abrefacil/models/api/condo.dart';
+import 'package:abrefacil/models/api/customer.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 

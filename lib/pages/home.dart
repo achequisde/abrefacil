@@ -114,14 +114,15 @@ class _DeviceColumnState extends ConsumerState<DeviceColumn> {
     final mqttClient = ref.watch(mqttProvider).value!;
 
     for (final action in widget.actions) {
-      final topic = '${widget.device['mqtt_prefix']}/${action['mqtt_topic']}';
+      final topic =
+          '${widget.device['mqtt_prefix']}/${action['mqtt_topic']}/status';
       mqttRef.subscribe(topic);
     }
 
     final filters = [
       for (final action in widget.actions)
         MqttClientTopicFilter(
-          '${widget.device['mqtt_prefix']}/${action['mqtt_topic']}',
+          '${widget.device['mqtt_prefix']}/${action['mqtt_topic']}/status',
           mqttClient.updates,
         )
     ];
@@ -138,8 +139,8 @@ class _DeviceColumnState extends ConsumerState<DeviceColumn> {
           ),
           Padding(
             padding: const EdgeInsets.all(16.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            child: Wrap(
+              alignment: WrapAlignment.spaceAround,
               children: [
                 for (final (i, action) in widget.actions.indexed)
                   DeviceAction(
